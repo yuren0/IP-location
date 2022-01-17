@@ -10,6 +10,6 @@
 （将最后输出信息改为如下代码）<br>
 参考:<br>
 ```
-$ip = ['code' => 200, 'ip' => $local, 'weizhi' => get_em($string, $start, $end)];<br>
-die(json_encode($ip,JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES));<br>
+$ip = ['code' => 200, 'ip' => $local, 'weizhi' => get_em($string, $start, $end)];
+die(json_encode($ip,JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES));
 ```
