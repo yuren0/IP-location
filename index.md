@@ -1,37 +1,17 @@
 ## 雨人小接口分享
 
-You can use the [editor on GitHub](https://github.com/yuren0/IP-location/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# IP-location
+利用PHP的curl方式获取站长网IP地理位置接口获取相应IP的物理位置<br>
+使用方法：<br>
+1.直接访问，如：https://example.com/ip.php<br>
+将获取本机IP地址。<br>
+2.带参数访问，如：https://example.com/ip.php?ip=8.8.8.8<br>
+将获取8.8.8.8的地理位置信息<br>
+<br>
+返回格式可自行修改为json类型。<br>
+（将最后输出信息改为如下代码）<br>
+参考:<br>
+```php
+$ip = ['code' => 200, 'ip' => $local, 'weizhi' => get_em($string, $start, $end)];
+die(json_encode($ip,JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES));
 ```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yuren0/IP-location/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
