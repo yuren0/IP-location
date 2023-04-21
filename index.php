@@ -25,7 +25,7 @@ if (!empty($_GET["ip"])){
 	return $substr;
 }
 	$string = $response;
-	$start = '0lh45"><em>';
+	$start = '<emid="infoLocation">';
 	$end = '</em><aclass';
 	echo 'IP：'.$local.'<br>位置：'.get_em($string, $start, $end);
 
